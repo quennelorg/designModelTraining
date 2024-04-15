@@ -4,6 +4,7 @@
 package org.example;
 
 import simpleFactory.car.CarMain;
+import strategy.StrategyMain;
 
 public class App {
     public String getGreeting() {
@@ -12,6 +13,8 @@ public class App {
 
     public static void main(String[] args) {
         CarMain carMain = new CarMain();
-        carMain.run();
+        StrategyMain strategyMain = new StrategyMain();
+//        carMain.run();
+        strategyMain.run();
     }
 }
