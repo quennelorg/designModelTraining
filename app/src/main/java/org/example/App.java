@@ -3,6 +3,10 @@
  */
 package org.example;
 
+import simpleFactory.car.Car;
+import simpleFactory.car.CarBrand;
+import simpleFactory.car.CarFactory;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -10,5 +14,10 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        CarFactory carFactory = new CarFactory();
+        Car xiaomiCar = carFactory.createCar(CarBrand.XIAOMI, "su7");
+        Car tankCar = carFactory.createCar(CarBrand.BEIQI, "tank300");
+        xiaomiCar.show();
+        tankCar.show();
     }
 }
