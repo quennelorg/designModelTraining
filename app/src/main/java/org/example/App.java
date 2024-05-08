@@ -12,9 +12,13 @@ public class App {
     }
 
     public static void main(String[] args) {
-        CarMain carMain = new CarMain();
-        StrategyMain strategyMain = new StrategyMain();
+
+        // 简单工厂
+//        CarMain carMain = new CarMain();
 //        carMain.run();
-        strategyMain.run();
+        // 策略模式
+//        StrategyMain strategyMain = new StrategyMain();
+//        strategyMain.run();
+
     }
 }
