@@ -3,6 +3,7 @@
  */
 package org.example;
 
+import decorator.PhoneMain;
 import simpleFactory.car.CarMain;
 import strategy.StrategyMain;
 
@@ -20,5 +21,8 @@ public class App {
 //        StrategyMain strategyMain = new StrategyMain();
 //        strategyMain.run();
 
+        // 装饰
+        PhoneMain phoneMain = new PhoneMain();
+        phoneMain.run();
     }
 }
